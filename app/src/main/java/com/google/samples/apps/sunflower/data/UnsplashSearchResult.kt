@@ -19,4 +19,5 @@ package com.google.samples.apps.sunflower.data
 sealed class UnsplashSearchResult {
     data class Success(val data: UnsplashSearchResponse) : UnsplashSearchResult()
     data class Error(val error: Exception) : UnsplashSearchResult()
+    object Idle : UnsplashSearchResult()
 }
